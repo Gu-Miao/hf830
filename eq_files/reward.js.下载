@@ -1,0 +1,8 @@
+function eventRewardPop(popId){
+	var popUrl = "/POP/common/event/event_reward_item.php?id=";
+	if(window.location.pathname == "/df/dnfapp/ui/event/view"){
+		location.href = popUrl+popId;
+	} else{
+		window.open(popUrl+popId,'_event_reward_item','width=800,height=700,scrollbars=yes,status=no,resizable=yes');
+	}
+}
