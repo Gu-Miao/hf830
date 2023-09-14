@@ -1,0 +1,177 @@
+@charset "utf-8";
+/* Neople UI Developer 김창환(Kim Chang Hwan) 2016.12.15 */
+body,html{min-width:1100px;width:100%;height:100%;}
+/* #wrap *,.act_main *{box-sizing:initial;font-family:'Noto Sans KR';}
+#wrap img,#wrap  picture,#wrap video,#wrap canvas,#wrap svg{display:inline-block;max-width:initial;vertical-align:middle;margin-top:-4px;}
+.act_main img, .act_main picture, .act_main video, .act_main canvas, .act_main svg{display:inline-block;max-width:initial;vertical-align:middle;margin-top:-4px;}
+*/
+
+@media screen and (max-width:1279px){.mcontent{margin-left:-551px;width:1102px !important}}
+@media screen and (min-width:1280px){.mcontent{margin-left:-733px;width:1466px !important}}
+a:hover,a:active,a:focus{text-decoration:none}
+
+.select{position:relative;margin:0;line-height:normal;display:block;float:right}
+.select *{margin:0;padding:0;cursor:pointer;font-size:16px;color:#acacac;font-weight:500;letter-spacing:-1.5px}
+.select .myValue{position:relative;left:0;top:0;border:1px solid #acacac;background:transparent;text-align:left;overflow:visible;z-index:2;}
+.select .myValue.selected{font-weight:bold}
+.select.open .myValue,footer .select .myValue.outLine{border:1px solid #acacac}
+.select button.myValue{height:40px;width:100%;text-indent:10px;line-height:38px;}
+.select .ctrl{position:absolute;top:6px;right:7px;width:31px;height:28px;background:url(https://cdn.df.nexon.com/img/web/act/new/btn_slt.png) no-repeat}
+.select ul{bottom:41px;left:0;width:100%;max-height:400px;border:0;border:1px solid #acacac;background:#0f1722 !important;overflow-x:hidden;overflow-y:auto !important;list-style:none}
+.select ul.aList{display:none}
+.select.open ul.aList{display:block}
+.select ul.iList{left:-2000%}
+.select.open ul.iList{left:0}
+.select li{position:relative;padding:0;margin:0;text-indent:0;height:30px;overflow:hidden;white-space:nowrap}
+.select li a{display:block;padding:0;margin:0;text-indent:10px;height:30px;line-height:30px;color:#acacac;background:#fff;text-decoration:none;text-align:left;}
+.select li.hover *{background:#999;color:#fff}
+
+.bg_main_pt{display:non;;position:absolute;top:0;left:0;width:100%;height:100%;}
+.bg_main_pt .pt_ba{position:absolute;top:0;left:0;width:100%;height:100%;background:url(https://cdn.df.nexon.com/img/web/act/new/bg_pt.png) repeat;z-index:20}
+.bg_main_pt .pt_op{position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.7);z-index:10}
+
+.act_main{position:relative;top:41px;width:100%;overflow:hidden;}
+.act_main *{box-sizing:initial;font-family:'Noto Sans KR';}
+.act_main h1{position:relative;margin-top:84px;width:100%;font-size:65px;line-height:65px;color:#fff;text-align:center;font-weight:500;text-align:center;letter-spacing:-2px;z-index:100}
+.act_main h1 span{display:inline-block;margin-bottom:9px;font-size:30px;line-height:30px;font-weight:500;letter-spacing:0}
+.act_main .play{position:absolute;top:290px;left:50%;margin-left:-54px;width:180px;height:108px;z-index:100}
+.act_main .play a{display:block;position:absolute;top:0;left:0;z-index:10}
+.act_main .play span{display:block;position:absolute;top:0;left:0;animation:play 2s ease-in-out 1s infinite;transform:rotate(0deg);z-index:1}
+@keyframes play{
+	0%{transform:rotate(0deg)}
+	50%{transform:rotate(45deg)}
+	100%{transform:rotate(45deg)}
+}
+
+.act_main .mvod{position:relative;margin:70px 0 41px 0;width:100%;height:0;background:url(https://cdn.df.nexon.com/img/web/act/new/bg_vod2.jpg) no-repeat 50% 137px;text-align:center;overflow:hidden;opacity:0;z-index:100}
+.act_main .mvod a.vod_stop{display:inline-block;position:relative;z-index:20}
+
+.act_main .mvod .mvod_cont{margin:52px auto 0 auto;padding:30px 0;width:1083px;height:499px;background:#000;}
+.act_main .mcontent{position:relative;margin:235px auto 0 auto;overflow:hidden;z-index:100}
+.act_main .thum{position:relative;padding:0 0 80px 10px;overflow:hidden;}
+.act_main .thum a{display:block;position:relative;float:left;margin:0 10px 10px 0;width:354px;height:230px}
+.act_main .thum a:hover{text-decoration:none;}
+.act_main .thum a img{width:352px;border:1px solid #373f50}
+.act_main .thum span{display:block;width:352px;height:56px;background:#131d2b;border:1px solid #373f50;border-top:none;text-align:center;line-height:52px;font-size:20px;color:#ebf2f9}
+.act_main .thum strong{display:none;position:absolute;top:0;left:0;width:354px;height:230px;background:url(https://cdn.df.nexon.com/img/web/act/new/img_slt.png) no-repeat}
+.act_main .thum a:hover span{color:#ffeb3b}
+.act_main .thum a:hover strong{display:block}
+
+
+@media screen and (max-width:1279px){.act_main .mcopy dl{width:1102px !important}}
+@media screen and (min-width:1280px){.act_main .mcopy dl{width:1446px !important}}
+.act_main .mcopy{position:relative;clear:both;padding-top:20px;width:100%;height:78px;background:rgba(19,29,43,.8);z-index:100}
+.act_main .mcopy dl{margin:0 auto}
+.act_main .mcopy dl dt{float:left;margin-top:8px;color:#373f50;font-size:14px;font-family:'Noto Sans KR'}
+.act_main .mcopy dl dd{position:relative;float:right;z-index:500}
+.act_main .mcopy dl dd .select{background:none;width:290px}
+.act_main .mcopy dl dd .select *{color:#373f50;font-weight:500}
+.act_main .mcopy dl dd .select .ctrl{background:url(https://cdn.df.nexon.com/img/web/act/new/btn_mslt.png) no-repeat}
+.act_main .mcopy dl dd .select .myValue{border:1px solid #373f50}
+.act_main .mcopy dl dd .select ul{bottom:41px;left:0;width:100%;list-style:none;border:0;border-top:1px solid #373f50;border-bottom:1px solid #373f50;background:rgba(19,29,43,.9);overflow:hidden}
+.act_main .mcopy dl dd .select li{position:relative;height:30px;border-left:1px solid #373f50; border-right:1px solid #373f50;overflow:hidden;white-space:nowrap}
+.act_main .mcopy dl dd .select li a{display:block;text-indent:10px;height:30px;line-height:30px;color:#373f50;background:none;text-decoration:none}
+.act_main .mcopy dl dd .select li.hover *{color:#fff}
+.act_main .mcopy dl dd a.mbtn{display:inline-block;margin-right:10px;width:154px;height:40px;background:#373f50;font-size:14px;color:#9399a4;font-weight:500;text-align:center;line-height:40px}
+
+/* 서브 */
+.act_sub{position:relative;width:100%;height:100%;background:#f7f7f7;}
+.act_sub *{box-sizing:initial;font-family:'Noto Sans KR';}
+.act_sub .sheader{position:fixed;top:41px;width:100%;z-index:100;background:#f7f7f7;}
+.act_sub .sheader .sbar{position:relative;margin:0 auto;width:1100px;z-index:110}
+.act_sub .sheader h1{float:left;height:90px;line-height:86px}
+.act_sub .sheader h1 a{font-size:20px;color:#212121;font-weight:700;letter-spacing:-1px}
+.act_sub .sheader a.nav_btn{float:right;margin-top:20px;width:50px;height:50px;background:url(https://cdn.df.nexon.com/img/web/act/new/btn_nav.png) no-repeat 0 0;text-indent:-5000px;font-size:0}
+.act_sub .sheader a.nav_btn:hover,.act_sub .sheader a.navhover{background-position:0 100%}
+
+.act_sub .sheader .topmenu{position:absolute;padding-top:8px;right:0;top:75px;z-index:200}
+.act_sub .sheader .topmenu p{position:absolute;right:17px;top:0px;}
+.act_sub .sheader .topmenu ul{margin:0;padding:0;width:325px;border:1px solid #9c9c9c;list-style:none;z-index:100}
+.act_sub .sheader .topmenu li{position:relative;margin:0;vertical-align:top;}
+.act_sub .sheader .topmenu li a{display:block;position:relative;padding:0;height:54px;background:#f6f6f6;border-bottom:1px solid #dfdfdf;text-align:left;font-size:16px;color:#8e8e8e;line-height:52px;;text-indent:30px;letter-spacing:-1px}
+.act_sub .sheader .topmenu li a .i{position:absolute;top:20px;right:15px;margin:0;width:17px;height:12px;background:url(https://cdn.df.nexon.com/img/web/act/new/bu_nav.png) no-repeat 0 2px}
+.act_sub .sheader .topmenu li ul{padding:0;background:#fff;border:none}
+.act_sub .sheader .topmenu li li{margin:0;border:none}
+.act_sub .sheader .topmenu li li a{padding:0;background:#fff;font-size:14px}
+.act_sub .sheader .topmenu li li a span{color:#9e9e9e;font-weight:400 !important}
+.act_sub .sheader .topmenu li.active{z-index:2}
+.act_sub .sheader .topmenu li.active a{background:#fff;color:#212121}
+.act_sub .sheader .topmenu li.active a span{font-weight:600}
+.act_sub .sheader .topmenu li.active .i{background-position:0 -98px}
+.act_sub .sheader .topmenu li.active ul{display:block;}
+.act_sub .sheader .topmenu li.active li.active a{background:#eff3fb}
+.act_sub .sheader .topmenu li.active li.active a span{color:#212121;font-weight:700 !important}
+
+.act_sub .svisual{position:relative;margin-top:131px;width:100%;height:270px}
+.act_sub .svisual .opac{margin:0 auto;width:1100px}
+.act_sub .svisual dl{display:inline-block;padding:65px 50px 0 50px;height:205px;line-height:45px;background:rgba(0,0,0,.5)}
+.act_sub .svisual dl dt,
+.act_sub .svisual dl dd{display:block}
+.act_sub .svisual dl dt h2{font-size:45px;color:#ffeb3b;font-weight:700;letter-spacing:-2px}
+.act_sub .svisual dl dd h3{margin-top:20px;padding:17px 0 0 0;background:url(https://cdn.df.nexon.com/img/web/act/new/ico_bar.png) no-repeat 4px 4px;font-size:33px;font-weight:400;color:#ffeb3b;letter-spacing:-1px}
+.act_sub .sv_bg1{background:#ddd no-repeat 50% 50%}
+.act_sub .sv_bg2{background:#ddd no-repeat 50% 50%}
+
+.act_sub .scontent{position:relative;padding-top:60px;width:100%;background:#fff}
+.act_sub .scontent .story{margin:0 auto 60px auto;width:1090px;border:5px solid #e0e0e0}
+.act_sub .scontent .story ul.tab_menu{margin:0;width:1090px;border-bottom:1px solid #e0e0e0;overflow:hidden}
+.act_sub .scontent .story ul.tab_menu li{float:left;height:95px;background:url(https://cdn.df.nexon.com/img/web/act/new/bg_tab.png) no-repeat 100% 0}
+.act_sub .scontent .story ul.tab_menu li a{display:block;padding:0 40px;height:95px;font-size:33px;line-height:96px;color:#e0e0e0;letter-spacing:-1px;font-weight:700;text-align:center}
+.act_sub .scontent .story ul.tab_menu li.selected a{color:#212121}
+.act_sub .scontent .story ul.tab_menu li.end{background:none}
+.act_sub .scontent .story ul.tab_con{margin:0 auto;padding:24px 44px 32px 44px;width:1002px;clear:both}
+.act_sub .scontent .story ul.tab_con li{display:none;color:#212121;font-size:16px;line-height:28px;letter-spacing:-1px}
+.act_sub .scontent .story ul.tab_con li.show{display:block}
+.act_sub .scontent .story ul.tab_con li img{cursor:pointer}
+.act_sub .scontent .story ul.tab_con li iframe{width:1000px;height:562px}
+.act_sub .scontent .vod{position:relative;margin:0 auto 51px auto;width:1100px;height:537px;background:url(https://cdn.df.nexon.com/img/web/act/new/bg_vod.jpg) no-repeat 0 0;overflow:hidden;text-align:center;}
+.act_sub .scontent .vod p{margin:36px auto 0 auto;width:680px;height:383px;border:10px solid #ffeb3b}
+.act_sub .scontent .vod span{display:block;margin-top:14px;color:#fff;font-size:16px;line-height:24px;letter-spacing:-1px}
+.act_sub .scontent .skill{position:relative;margin:0 auto;width:1100px}
+.act_sub .scontent .skill h4{margin-bottom:15px;color:#212121;font-size:33px;line-height:40px;letter-spacing:-1px;font-weight:700;overflow:hidden}
+.act_sub .scontent .txtcont{position:relative;margin:-4px auto 0 auto;width:1100px;}
+.act_sub .scontent .txtcont h4{font-size:33px;color:#212121;line-height:33px;font-weight:700;letter-spacing:-1px}
+.act_sub .scontent .txtcont h4.mar1{margin-top:43px}
+.act_sub .scontent .txtcont dl{margin:7px 0 0 1px;overflow:hidden}
+.act_sub .scontent .txtcont dl dt{margin-top:7px;font-size:20px;color:#212121;letter-spacing:-1px;line-height:31px;font-weight:500;vertical-align:top;}
+.act_sub .scontent .txtcont dl dt img{display:inline-block;margin:14px 3px 0 0;vertical-align:top;}
+.act_sub .scontent .txtcont dl dd , .act_sub .txtcont p {margin:1px 0 8px 11px;font-size:16px;color:#616161;letter-spacing:-1px;line-height:23px;font-weight:400;overflow:hidden}
+.act_sub .scontent .txtcont dl dd.thum {margin:6px 0 8px 0}
+.act_sub .scontent .txtcont .clear{margin-left:0}
+.act_sub .scontent .txtcont .mart15{margin-top:15px}
+
+.act_sub table.cboard{width:1100px;border-bottom:2px solid #bdbdbd;font-family:'Noto Sans KR';font-style:normal;font-weight:400;vertical-align:top;text-align:left}
+.act_sub table.cboard caption{display:none}
+.act_sub table.cboard th{padding:24px 0 28px 30px;border-top:1px solid #bdbdbd;background:#eff3fb;font-size:20px;color:#212121;letter-spacing:0;text-align:left}
+.act_sub table.cboard td{padding:19px 0 22px 30px;border-top:1px solid #e0e0e0;font-size:16px;color:#616161;letter-spacing:-1px;line-height:23px;vertical-align:top;font-weight:400;}
+.act_sub table.cboard td img{margin:-1px 5px 0 0;display:inline-block;max-width:initial;vertical-align:middle;margin-top:-4px}
+
+.act_sub .scontent .fnav{position:relative;margin-top:100px;width:100%;height:71px;background:#e0e0e0}
+.act_sub .scontent .fnav ul{position:relative;}
+.act_sub .scontent .fnav ul li{float:left;width:50%;height:71px}
+.act_sub .scontent .fnav ul li a{display:inline-block;font-size:16px;font-weight:700;line-height:67px;letter-spacing:-1px}
+.act_sub .scontent .fnav ul li.prev{text-align:right;}
+.act_sub .scontent .fnav ul li.prev a{margin-right:97px;padding-left:150px;background:url(https://cdn.df.nexon.com/img/web/act/new/btn_pn.png) no-repeat 0 23px;color:#585a66;}
+.act_sub .scontent .fnav ul li.next{background:#e0e0e0;}
+.act_sub .scontent .fnav ul li.next a{margin-left:97px;padding-right:150px;background:url(https://cdn.df.nexon.com/img/web/act/new/btn_pn2.png) no-repeat 100% 23px;color:#585a66}
+.act_sub .scontent .fnav ul li.top{position:absolute;left:50%;top:0;margin-left:-67px;width:134px;height:71px;background:#263238}
+.act_sub .scontent .fnav ul li.top a{display:block;width:134px;height:71px;background:none;color:#fff;text-align:center;line-height:71px}
+.act_sub .scontent .fnav ul li:hover{background:#ffeb3b}
+.act_sub .scontent .fnav ul li:hover a{color:#212121}
+.act_sub .scontent .fnav ul li.prev:hover a{background-position:0 -77px}
+.act_sub .scontent .fnav ul li.next:hover a{background-position:100% -77px}
+.act_sub .scontent .fnav ul li.top:hover{background:#263238}
+.act_sub .scontent .fnav ul li.top:hover a{color:#fff}
+
+footer{position:relative;padding:0;width:100%;background:#f8f8f8}
+footer .fcont{position:relative;padding:20px 0 170px 0;margin:0 auto;width:1100px}
+footer .fcont a.mbtn{display:inline-block;position:absolute;right:300px;top:20px;width:154px;height:40px;background:#acacac;font-size:14px;color:#fff;font-weight:500;text-align:center;line-height:40px}
+footer .copy{float:left;margin-top:10px;font-size:14px;color:#7e7e7e}
+
+.noneclick{display:none;position:fixed;top:0;left:0;width:100%;height:100%;z-index:50}
+
+/* 모바일 버전으로 보기 버튼 */
+.mview{position:relative;margin:0;padding:0 0 55px 0;top:0;left:0;width:100%;height:195px;z-index:100;line-height:195px}
+.mview a{display:block;margin:0 auto;width:100%;height:195px;background:#373f50;font-size:70px;color:#9399a4;font-weight:500;text-align:center;}
+.view_mm{background:#424a55}
+.view_ms{background:#f8f8f8}
