@@ -1,0 +1,16 @@
+/* Noto Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* Suit */
+@import url('https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css');
+
+/* 연단된 칼날 */
+@font-face{font-family:'DNFForgedBlade';font-style:normal;font-weight:300;src:url('https://cdn.df.nexon.com/img/common/font/DNFForgedBlade-Light.otf')format('opentype')}
+@font-face{font-family:'DNFForgedBlade';font-style:normal;font-weight:500;src:url('https://cdn.df.nexon.com/img/common/font/DNFForgedBlade-Medium.otf')format('opentype')}
+@font-face{font-family:'DNFForgedBlade';font-style:normal;font-weight:700;src:url('https://cdn.df.nexon.com/img/common/font/DNFForgedBlade-Bold.otf')format('opentype')}
+
+/* 비트비트v2 */
+@font-face{font-family:'DNFBitBitv2';font-style:normal;font-weight:400;src:url('https://cdn.df.nexon.com/img/common/font/DNFBitBitv2.otf')format('opentype')}
+
+/* 비트비트v1 */
+@font-face{font-family:'bitbit';src:url('https://cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff'),url('https://cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff2')}
